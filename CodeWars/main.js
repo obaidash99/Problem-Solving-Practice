@@ -267,6 +267,22 @@
 // console.log(humanYearsCatYearsDogYears(2));
 
 // Counting Duplicates ===========================================================================> SOLVED
+
 function duplicateCount(text) {
 	let duplicate = 0;
+	let letters = [];
+	let test = text.split('');
+	for (let i = 0; i <= test.length; i++) {
+		for (let j = i + 1; j < text.length; j++) {
+			// test[i] == test[j] ? (duplicate += 1) : '';
+			if (test[i] == test[j]) {
+				duplicate += 1;
+				letters.push(test[i]);
+			}
+		}
+	}
+	return duplicate, letters;
 }
+
+let name = 'Indivisibility';
+console.log(duplicateCount(name));
