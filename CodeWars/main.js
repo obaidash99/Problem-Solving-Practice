@@ -269,32 +269,26 @@
 // Counting Duplicates ===========================================================================> SOLVED
 
 // function duplicateCount(text) {
-// 	let duplicate = 0;
-// 	let letters = [];
-// 	let test = text.split('');
-// 	for (let i = 0; i <= test.length; i++) {
-// 		for (let j = i + 1; j < text.length; j++) {
-// 			// test[i] == test[j] ? (duplicate += 1) : '';
-// 			if (test[i] == test[j]) {
-// 				duplicate += 1;
-// 				letters.push(test[i]);
-// 			}
+// 	let obj = {};
+// 	let count = 0;
+
+// 	for (let i of text) {
+// 		i = i.toLowerCase();
+// 		if (!obj[i]) {
+// 			obj[i] = 1;
+// 		} else {
+// 			obj[i]++;
 // 		}
 // 	}
-// 	return duplicate, letters;
+// 	// console.log(obj);
+// 	for (let i in obj) {
+// 		if (obj[i] > 1) {
+// 			count++;
+// 		}
+// 	}
+// 	// console.log(count);
+// 	return count;
 // }
 
-function duplicateCount(text) {
-	let obj = {};
-	for (let i of text) {
-		if (!obj[i]) {
-			obj[i] = 1;
-		} else {
-			obj[i]++;
-		}
-		console.log(obj);
-	}
-}
-
-let name = 'Indivisibility';
-console.log(duplicateCount(name));
+// let name = 'aabb';
+// duplicateCount(name);
