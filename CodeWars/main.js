@@ -312,3 +312,12 @@
 // 	return sum;
 // }
 // console.log(sum([]));
+
+// Replace With Alphabet Position ================================================================> SOLVED
+
+// const alphabetPosition = (text) =>
+// 	[...text.replace(/[^a-z]/gi, '').toLowerCase()]
+// 		.map((e) => e.charCodeAt() - 96)
+// 		.join(' ');
+
+// alphabetPosition("The sunset sets at twelve o' clock.");
