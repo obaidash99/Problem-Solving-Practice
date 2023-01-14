@@ -292,3 +292,23 @@
 
 // let name = 'aabb';
 // duplicateCount(name);
+
+// Even or Odd ===================================================================================> SOLVED
+// function evenOrOdd(number) {
+// 	return number % 2 == 0 ? 'Even' : 'Odd';
+// }
+// console.log(evenOrOdd(1))
+
+// Sum Arrays ====================================================================================> SOLVED
+// function sum(numbers) {
+// 	'use strict';
+// 	let sum = 0;
+// 	if (numbers.length <= 0) {
+// 		return 0;
+// 	}
+// 	numbers.map((el) => {
+// 		sum += el;
+// 	});
+// 	return sum;
+// }
+// console.log(sum([]));
