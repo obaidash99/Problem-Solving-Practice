@@ -344,3 +344,16 @@
 // }
 
 // console.log(twoSum([1, 2, 3], 4)); // [0,2]
+
+// Build Tower ===================================================================================> SOLVED
+// function towerBuilder(n) {
+// 	let arr = [];
+// 		for (let i = 1; i <= n; i++) {
+// 			const spaces = ' '.repeat(n - i);
+// 			const blocks = '*'.repeat(i * 2 - 1);
+// 			arr.push(spaces + blocks + spaces);
+// 		}
+// 		return arr;
+// }
+
+console.log(towerBuilder(3));
