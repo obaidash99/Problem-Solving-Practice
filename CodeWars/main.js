@@ -321,3 +321,26 @@
 // 		.join(' ');
 
 // alphabetPosition("The sunset sets at twelve o' clock.");
+
+// Two Sum =======================================================================================> SOLVED
+// function twoSum(numbers, target) {
+// 	for (let i = 0; i < numbers.length; i++) {
+// 		for (let j = i + 1; j < numbers.length; j++) {
+// 			if(numbers[i] + numbers[j] == target) {
+// 				return [i, j];
+// 			}
+// 		}
+// 	}
+// }
+
+// function twoSum(numbers, target) {
+// 	for (let i = 0; i < numbers.length; i++) {
+// 		const j = numbers.findIndex((el, index) => index > i && el === target - numbers[i]);
+// 		// console.log(j);
+// 		if (j !== -1) {
+// 			return [i, j];
+// 		}
+// 	}
+// }
+
+// console.log(twoSum([1, 2, 3], 4)); // [0,2]
