@@ -356,4 +356,52 @@
 // 		return arr;
 // }
 
-console.log(towerBuilder(3));
+// console.log(towerBuilder(3));
+
+// Growth of a Population ========================================================================> SOLVED
+// function nbYear(p0, percent, aug, p) {
+// 	let i = 0;
+// 	let newNum = 0;
+// 	let newPercent = percent / 100;
+// 	while (p > p0) {
+// 		newNum = p0 + Math.floor(p0 * newPercent) + aug;
+// 		p0 = newNum;
+// 		i++;
+// 	}
+// 	return i;
+// }
+
+// console.log(nbYear(1500, 5, 100, 5000));
+
+// Shortest Word =================================================================================> SOLVED
+// function findShort(s) {
+// 	let words = s.split(' ');
+// 	let shortest = Number.MAX_SAFE_INTEGER;
+
+// 	for (let i = 0; i < words.length; i++) {
+// 		let wordLength = words[i].length;
+
+// 		if (wordLength < shortest) {
+// 			shortest = wordLength;
+// 		}
+// 	}
+// 	return shortest;
+// }
+
+// console.log(findShort('Shortest Word Obaida'));
+
+// Sum of the first nth term of Series ============================================================> SOLVED
+function SeriesSum(n) {
+	if (n == 0) {
+		return n.toFixed(2);
+	} else {
+		let sum = 1;
+		for (let i = 1; i < n; i++) {
+			sum += 1 / (i + 3);
+			console.log(sum);
+		}
+		return sum.toFixed(2);
+	}
+}
+
+console.log(SeriesSum(5));
