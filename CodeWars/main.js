@@ -422,3 +422,37 @@
 // }
 
 // console.log(accum('sss'));
+
+// Remove String Spaces ==========================================================================> SOLVED
+// function noSpace(x) {
+// 	let splitted = x.split('');
+// 	for (let i = 0; i < splitted.length; i++) {
+// 		if (splitted[i] == ' ') {
+// 			splitted.splice(i, 1);
+// 			i--;
+// 		}
+// 	}
+// 	return splitted.join('');
+// }
+
+// console.log(noSpace('f  afd sa'));
+
+// Write Number in Expanded Form =================================================================> SOLVED
+function expandedForm(num) {
+	let splitted = num.toString().split('');
+	let expNum = [];
+	for (let i = 0; i < splitted.length; i++) {
+		if (splitted[i] != 0) {
+			expNum.push(splitted[i]);
+			if (i == 0) {
+				expNum.push('0'.repeat(splitted.length - i));
+			} else {
+				expNum.push('0'.repeat(splitted.length - i - 1));
+			}
+		}
+	}
+	console.log(splitted);
+	console.log(expNum);
+}
+
+expandedForm(6045);
