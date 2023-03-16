@@ -391,17 +391,34 @@
 // console.log(findShort('Shortest Word Obaida'));
 
 // Sum of the first nth term of Series ============================================================> SOLVED
-function SeriesSum(n) {
-	if (n == 0) {
-		return n.toFixed(2);
-	} else {
-		let sum = 1;
-		for (let i = 1; i < n; i++) {
-			sum += 1 / (i + 3);
-			console.log(sum);
-		}
-		return sum.toFixed(2);
-	}
-}
+// function SeriesSum(n) {
+// 	if (n == 0) {
+// 		return n.toFixed(2);
+// 	} else {
+// 		let sum = 1;
+// 		let count = 4;
+// 		for (let i = 1; i < n; i++) {
+// 			sum += 1 / count;
+// 			count += 3;
+// 		}
+// 		return sum.toFixed(2);
+// 	}
+// }
 
-console.log(SeriesSum(5));
+// console.log(SeriesSum(5));
+
+// Mumbling ======================================================================================> SOLVED
+// function accum(s) {
+// 	let letters = s.split('');
+// 	let final = [];
+// 	for (let i = 0; i < letters.length; i++) {
+// 		final.push(letters[i].toUpperCase());
+// 		final.push(letters[i].toLowerCase().repeat(i));
+// 		if (i !== letters.length - 1) {
+// 			final.push('-');
+// 		}
+// 	}
+// 	return final.join('');
+// }
+
+// console.log(accum('sss'));
