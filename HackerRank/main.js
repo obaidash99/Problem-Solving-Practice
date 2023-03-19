@@ -32,7 +32,7 @@
 // Day 2 Week 1 ###########################################
 
 // let example = [5, 5, 5, 5, 5];
-let example = [1, 3, 5, 7, 9];
+// let example = [1, 3, 5, 7, 9];
 
 // function miniMaxSum(arr) {
 // 	let spare = [...arr];
@@ -113,10 +113,40 @@ let example = [1, 3, 5, 7, 9];
 
 // console.log(timeConversion('12:45:54AM'));
 
-// Lonely Integer ###########################################
+// Lonely Integer ########################################### NOT SOLVED
 
-let a = [1, 2, 3, 4, 3, 2, 1];
+// let a = [1, 2, 3, 4, 3, 2, 1];
 
-console.log([...new Set(a)]);
+// function lonelyInteger(a) {
+// 	let num = a.map((el) => {
+// 		for (let i = 0; i < a.length; i++) {
+// 			el == a[i] ? null : a.indexOf(el);
+// 		}
+// 	});
+// 	return num;
+// }
 
-console.log(a.filter((x, i, a) => a.indexOf(x) === i));
+// console.log(lonelyInteger([1, 2, 3, 4, 3, 2, 1]));
+
+// Compare the Triplets ###########################################
+// function compareTriplets(a, b) {
+// 	let countA = 0,
+// 		countB = 0;
+// 		for (let i = 0; i < a.length; i++) {
+// 			a[i] > b[i] ? countA++ : a[i] == b[i] ? '' : countB++;
+// 	}
+// 	return [countA, countB];
+// }
+
+// console.log(compareTriplets([17, 28, 30], [99, 16, 8]));
+
+// Staircase ###########################################
+// function staircase(n) {
+// 	let count = n - 1;
+// 	for (let i = 1; i <= n; i++) {
+// 		console.log(' '.repeat(count) + '#'.repeat(i));
+// 		count--;
+// 	}
+// }
+
+// staircase(6);
