@@ -150,3 +150,64 @@
 // }
 
 // staircase(6);
+
+// Birthday Cake Candles ###########################################
+// function birthdayCakeCandles(candles) {
+// 	let max = candles[0],
+// 		count = 0;
+// 	for (let i = 0; i < candles.length; i++) {
+// 		if (candles[i] > max) {
+// 			max = candles[i];
+// 		} else if (candles[i] == max) {
+// 			count++;
+// 		}
+// 	}
+// 	return count;
+// }
+
+// birthdayCakeCandles([4, 2, 3, 1, 4]);
+
+// Diagonal Difference ###########################################
+// function diagonalDifference(arr) {
+// 	let left = 0,
+// 		right = 0;
+// 	for (let i = 0, j = 1; i < arr.length - 1, j <= arr.length; i++, j++) {
+// 		left += +arr[i][i];
+// 		right += +arr[i][arr.length - j];
+// 	}
+// 	let diagDiff = left - right;
+// 	let result = diagDiff > 0 ? diagDiff : diagDiff * -1;
+// 	return result;
+// }
+
+// console.log(
+// 	diagonalDifference([
+// 		[11, 2, 4],
+// 		[4, 5, 6],
+// 		[10, 8, -12],
+// 	])
+// );
+
+// Find Median ##########################################
+// function findMedian(arr) {
+// 	arr.shift();
+// 	arr.sort((a, b) => a - b);
+// 	const mid = Math.floor(arr.length / 2);
+// 	if (arr.length % 2 === 0) {
+// 		return Math.floor((arr[mid - 1] + arr[mid]) / 2);
+// 	} else {
+// 		return arr[mid];
+// 	}
+// }
+
+// console.log(findMedian([7, 0, 1, 2, 4, 6, 5, 3]));
+
+// Very Big Sum ##########################################
+function aVeryBigSum(ar) {
+	// Write your code here
+	let sum = 0;
+	ar.map((el) => (sum += +el));
+	return sum;
+}
+
+aVeryBigSum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005]);
